@@ -1,0 +1,85 @@
+<div class="container content-container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-6">
+    <form class="form" (submit)="createUser()">
+    <div class="form-group col-md-4">
+        <h1>Create a user</h1>
+        <label>Enter user information. If the user’s organization doesn’t already exist, you can <div class="form-check-inline"><p><a routerLink="/org">Create an organization</a></p></div></label>
+    </div>
+    <div>
+        
+        <div class="input-group col-md-4">
+                <input type="text" class="form-control" placeholder="Enter organization Id" name="orgidsearch" [(ngModel)]="model.orgidsearch" aria-label="organization Id" aria-describedby="basic-addon1">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">Search</button>
+                </div>
+              </div>
+
+        <div class="form-group col-md-4">
+                <label></label>
+                <select id="inputtype" class="form-control" name="billingtype" [(ngModel)]="model.billingtype">
+                  <option selected>Billing type</option>
+                  <option>Select</option>
+                  <option>Agency Paid</option>
+                  <option>Subscriber Paid</option>
+                </select>
+        </div>
+<div class="form-group col-md-4">
+        <h1>User roles</h1>
+        <p>Select one or more user roles.</p>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="subscriberpaidadministrator" value="Subscriber paid administrator"  name="paidAdministrator"
+                [disabled]="paidMember" [(ngModel)]="paidAdministrator">
+                <label class="form-check-label" for="inlineCheckbox1">Subscriber paid administrator</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="subscriberpaidmember" value="Subscriber paid member" name="paidMember"
+                [disabled]="paidAdministrator" [(ngModel)]="paidMember">
+                <label class="form-check-label" for="inlineCheckbox1">Subscriber paid member</label>
+        </div>
+
+        <div>
+            <h5>Uplift request tool (optional)</h5>
+            <p>To select this role, you’ll need at least one user role selected above.</p>
+            <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" [disabled]="!paidMember && !paidAdministrator" value="Uplift manager" 
+                    [(ngModel)]="model.upliftManager" name="upliftManager">
+                    <label class="form-check-label" for="inlineCheckbox1">Uplift manager</label>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+        <div class="form-group col-md-4">
+            <label for="inputfirstname">First Name</label>
+            <input type="text" class="form-control" name="fname" [(ngModel)]="model.fname" id="inputfirstname" aria-describedby="firstnameHelp" placeholder="Enter First Name">
+        </div>
+
+        <div class="form-group col-md-4">
+            <label for="inputlastname">Last Name</label>
+            <input type="text" class="form-control"  name="lname" [(ngModel)]="model.lname" id="inputlastname" aria-describedby="lastnameHelp" placeholder="Enter Last Name">
+        </div>
+
+        <div class="form-group col-md-4">
+            <label for="InputEmail">Email</label>
+            <input type="email" class="form-control" name="email" [(ngModel)]="model.email" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter Email">
+        </div>
+
+        <div class="form-group col-md-4">
+            <label for="InputEmailconfirm">Confirm email</label>
+            <input type="email" class="form-control" name="confirmemail" [(ngModel)]="model.confirmemail" id="InputEmailconfirm" aria-describedby="confirmemailHelp" placeholder="Confirm email">
+        </div>
+        
+        <div class="form-row col-md-2">
+        <div class="form-row col-md-2">
+                <p><a href="#">Cancel</a></p>  
+            </div>
+            <div class="form-row col-md-4">      
+                    <button type="submit" class="btn btn-primary col-md-10">Create User</button>
+                </div>
+        </div>
+</form>
+            </div>
+        </div>
+</div>

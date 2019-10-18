@@ -1,0 +1,12 @@
+#content-container {
+    max-width: 1440px;
+}
+
+.form{
+    position: fixed;
+    top: 68%;
+    bottom: -55%;
+    left: 83%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+   }

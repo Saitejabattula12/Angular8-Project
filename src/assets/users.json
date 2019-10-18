@@ -1,0 +1,100 @@
+[{
+    "billingtype": "Agency Paid",
+    "confirmemail": "saiteja.battula12@gmail.com",
+    "email": "saiteja.battula12@gmail.com",
+    "fname": "Mani",
+    "lname": "Vejalla",
+    "orgidsearch": 100001,
+    "role": "ad",
+    "upliftManager": true
+  } ,
+  {
+    "billingtype": "Subscriber Paid",
+    "confirmemail": "arun.boraiah@gmail.com",
+    "email": "arun.boraiah@gmail.com",
+    "fname": "Arun",
+    "lname": "Boraiah",
+    "orgidsearch": 100002,
+    "role": "ad",
+    "upliftManager": true
+  } ,
+  {
+    "billingtype": "Agency Paid",
+    "confirmemail": "arjun@gmail.com",
+    "email": "arjun@gmail.com",
+    "fname": "Arjun",
+    "lname": "Abcde",
+    "orgidsearch": 100003,
+    "role": "ad",
+    "upliftManager": true
+  } ,
+  {
+    "billingtype": "Agency Paid",
+    "confirmemail": "Chai@gmail.com",
+    "email": "Chai@gmail.com",
+    "fname": "Naga",
+    "lname": "Chai",
+    "orgidsearch": 100004,
+    "role": "ad",
+    "upliftManager": true
+  } ,
+  {
+    "billingtype": "Agency Paid",
+    "confirmemail": "Ravi@gmail.com",
+    "email": "Ravi@gmail.com",
+    "fname": "Ravi",
+    "lname": "kallam",
+    "orgidsearch": 100005,
+    "role": "ad",
+    "upliftManager": true
+  } ,
+  {
+    "billingtype": "Agency Paid",
+    "confirmemail": "kiranabc@gmail.com",
+    "email": "kiranabc@gmail.com",
+    "fname": "Kiran",
+    "lname": "Vejalla",
+    "orgidsearch": 100006,
+    "role": "ad",
+    "upliftManager": true
+  } ,
+  {
+    "billingtype": "Agency Paid",
+    "confirmemail": "ryan@gmail.com",
+    "email": "ryan@gmail.com",
+    "fname": "ryan",
+    "lname": "chri",
+    "orgidsearch": 100007,
+    "role": "ad",
+    "upliftManager": true
+  } ,
+  {
+    "billingtype": "Subscriber Paid",
+    "confirmemail": "goutham@gmail.com",
+    "email": "goutham@gmail.com",
+    "fname": "goutham",
+    "lname": "Kommineni",
+    "orgidsearch": 100008,
+    "role": "ad",
+    "upliftManager": true
+  } ,
+  {
+    "billingtype": "Agency Paid",
+    "confirmemail": "Manoj@gmail.com",
+    "email": "Manoj@gmail.com",
+    "fname": "Manoj",
+    "lname": "Sai",
+    "orgidsearch": 100009,
+    "role": "ad",
+    "upliftManager": true
+  } ,
+  {
+    "billingtype": "Agency Paid",
+    "confirmemail": "Prem@gmail.com",
+    "email": "prem@gmail.com",
+    "fname": "Pream",
+    "lname": "Chand",
+    "orgidsearch": 100010,
+    "role": "ad",
+    "upliftManager": true
+  }]
