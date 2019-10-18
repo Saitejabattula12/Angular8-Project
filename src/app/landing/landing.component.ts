@@ -7,25 +7,25 @@ import { IcamServiceService } from '../icam-service.service';
   styleUrls: ['./landing.component.css']
 })
 export class LandingComponent implements OnInit {
-  public model:landing = <landing>{};
-  constructor(private icamService:IcamServiceService) { }
-  public userList=[];
-  public searchType=""
+  public model: landing = <landing>{};
+  constructor(private icamService: IcamServiceService) { }
+  public userList = [];
+  public searchType = ""
   ngOnInit() {
   }
 
-  public getSearchItem(event:any){
-    switch(event.target.value){
-      case 'users':{
-        this.searchType=event.target.value;
+  public getSearchItem(event: any) {
+    switch (event.target.value) {
+      case 'users': {
+        this.searchType = event.target.value;
       }
-      case 'org':{
-        this.searchType=event.target.value;
+      case 'org': {
+        this.searchType = event.target.value;
       }
     }
-    if(event.target.value){
-      this.icamService.getAll(event.target.value).subscribe((resp)=>{
-        this.userList=resp as any;
+    if (event.target.value) {
+      this.icamService.getAll(event.target.value).subscribe((resp) => {
+        this.userList = resp as any;
       });
     }
   }

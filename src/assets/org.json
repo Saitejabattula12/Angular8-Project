@@ -7,7 +7,7 @@
     "state": "VA",
     "city": "Fairfax",
     "orgType": "User"
-  } ,
+  },
   {
     "name": "Ram",
     "id": 1122,
@@ -17,7 +17,7 @@
     "state": "VA",
     "city": "Fairfax",
     "orgType": "User"
-  } ,
+  },
   {
     "name": "Ram",
     "id": 1122,
@@ -27,7 +27,7 @@
     "state": "VA",
     "city": "Fairfax",
     "orgType": "User"
-  } ,
+  },
   {
     "name": "Ram",
     "id": 1122,
@@ -37,7 +37,7 @@
     "state": "VA",
     "city": "Fairfax",
     "orgType": "User"
-  } ,
+  },
   {
     "name": "Ram",
     "id": 1122,
@@ -47,7 +47,7 @@
     "state": "VA",
     "city": "Fairfax",
     "orgType": "User"
-  } ,
+  },
   {
     "name": "Ram",
     "id": 1122,
@@ -57,7 +57,7 @@
     "state": "VA",
     "city": "Fairfax",
     "orgType": "User"
-  } ,
+  },
   {
     "name": "Ram",
     "id": 1122,
@@ -67,7 +67,7 @@
     "state": "VA",
     "city": "Fairfax",
     "orgType": "User"
-  } ,
+  },
   {
     "name": "Ram",
     "id": 1122,
@@ -77,7 +77,7 @@
     "state": "VA",
     "city": "Fairfax",
     "orgType": "User"
-  } ,
+  },
   {
     "name": "Ram",
     "id": 1122,
@@ -87,7 +87,7 @@
     "state": "VA",
     "city": "Fairfax",
     "orgType": "User"
-  } ,
+  },
   {
     "name": "Ram",
     "id": 1122,
@@ -97,4 +97,5 @@
     "state": "VA",
     "city": "Fairfax",
     "orgType": "User"
-  }]
+  }
+]

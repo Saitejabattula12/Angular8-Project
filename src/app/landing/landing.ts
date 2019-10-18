@@ -1,4 +1,4 @@
-export class landing{
-    searchText:string;
-    serachItem:string;
+export class landing {
+    searchText: string;
+    serachItem: string;
 }

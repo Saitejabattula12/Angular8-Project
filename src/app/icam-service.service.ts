@@ -6,23 +6,23 @@ import { HttpClient } from '@angular/common/http';
 })
 export class IcamServiceService {
 
-  constructor(private httpClient:HttpClient) { }
-  
-  get(id:number){
-    return "get"+id;
+  constructor(private httpClient: HttpClient) { }
+
+  get(id: number) {
+    return "get" + id;
   }
-  create(value:any){
-    console.log("Service Layer ==== create===",value);
+  create(value: any) {
+    console.log("Service Layer ==== create===", value);
     return "create";
   }
-  update(value:any){
-    console.log("Service Layer ==== update===",value);
+  update(value: any) {
+    console.log("Service Layer ==== update===", value);
     return "update";
   }
-  delete(id:number){
-    return "delete"+id;
+  delete(id: number) {
+    return "delete" + id;
   }
-  getAll(url){
-    return this.httpClient.get("assets/"+url+".json");
+  getAll(url) {
+    return this.httpClient.get("assets/" + url + ".json");
   }
 }
