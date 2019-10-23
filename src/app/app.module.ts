@@ -10,6 +10,9 @@ import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 import { OrganisationComponent } from './organisation/organisation.component';
 import { IcamServiceService } from './icam-service.service';
+import { GlobalnavComponent } from './globalnav/globalnav.component';
+import { GlobalfooterComponent } from './globalfooter/globalfooter.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +20,9 @@ import { IcamServiceService } from './icam-service.service';
     LandingComponent,
     LoginComponent,
     UserComponent,
-    OrganisationComponent
+    OrganisationComponent,
+    GlobalnavComponent,
+    GlobalfooterComponent
   ],
   imports: [
     BrowserModule,

@@ -29,8 +29,8 @@
           </select>
         </div>
         <div class="input-group col-md-4">
-          <input type="text" class="form-control" name="serachitem" [(ngModel)]="model.serachText"
-            placeholder="Enter search Text" aria-label="searchtext" aria-describedby="basic-addon2">
+          <input type="text" class="form-control" name="serachitem" [(ngModel)]="model.searchText"
+            placeholder="Please enter user/org" aria-label="searchtext" aria-describedby="basic-addon2">
           <div class="input-group-append">
             <button class="btn btn-outline-secondary" type="button">Search</button>
           </div>
@@ -48,6 +48,7 @@
                 <th>Organization ID</th>
                 <th>Role</th>
                 <th>Uplift Manager</th>
+                <th colspan="2">Actions</th>
               </thead>
               <tbody>
                 <tr *ngFor="let us of userList">
@@ -59,6 +60,8 @@
                   <td>{{us.orgidsearch}}</td>
                   <td>{{us.role}}</td>
                   <td>{{us.upliftManager}}</td>
+                  <td><button  routerLink="/user/{{us.fname}}">Edit</button></td>
+                  <td><button (click)="deleteRow(us.id,'users')">Delete</button></td>
                 </tr>
               </tbody>
             </table>
@@ -77,6 +80,7 @@
                 <th>State</th>
                 <th>City</th>
                 <th>Organization Type</th>
+                <th colspan="2">Actions</th>
               </thead>
               <tbody>
                 <tr *ngFor="let us of userList">
@@ -88,6 +92,8 @@
                   <td>{{us.state}}</td>
                   <td>{{us.city}}</td>
                   <td>{{us.orgType}}</td>
+                  <td><button routerLink="/org/{{us.id}}">Edit</button></td>
+                  <td><button  (click)="deleteRow(us.id,'org')">Delete</button></td>
                 </tr>
               </tbody>
             </table>

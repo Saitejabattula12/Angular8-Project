@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class IcamServiceService {
-
+  storeObject:any;
   constructor(private httpClient: HttpClient) { }
 
   get(id: number) {
@@ -19,10 +19,18 @@ export class IcamServiceService {
     console.log("Service Layer ==== update===", value);
     return "update";
   }
-  delete(id: number) {
+  delete(id: number,type:string) {
+    console.log("Service Layer ==== Delete===", id,type);
     return "delete" + id;
   }
   getAll(url) {
     return this.httpClient.get("assets/" + url + ".json");
+  }
+
+  getStore(){
+    return this.storeObject;
+  }
+  setStore(value:any){
+    this.storeObject = value;
   }
 }

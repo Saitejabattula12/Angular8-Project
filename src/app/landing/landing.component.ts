@@ -10,23 +10,24 @@ export class LandingComponent implements OnInit {
   public model: landing = <landing>{};
   constructor(private icamService: IcamServiceService) { }
   public userList = [];
-  public searchType = ""
+  public searchType = "";
   ngOnInit() {
+    this.getData('users');
   }
-
   public getSearchItem(event: any) {
-    switch (event.target.value) {
-      case 'users': {
-        this.searchType = event.target.value;
-      }
-      case 'org': {
-        this.searchType = event.target.value;
-      }
-    }
     if (event.target.value) {
-      this.icamService.getAll(event.target.value).subscribe((resp) => {
-        this.userList = resp as any;
-      });
+      this.getData(event.target.value);
     }
+  }
+  private getData(value:string){
+    this.searchType = value;
+    this.model.searchItem = value;
+    this.icamService.getAll(value).subscribe((resp) => {
+      this.icamService.setStore(resp);
+      this.userList = resp as any;
+    });
+  }
+  public deleteRow(id:number,type:string):void{
+    this.icamService.delete(id,type);
   }
 }

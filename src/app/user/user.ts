@@ -7,4 +7,5 @@ export class user{
     billingtype:string;
     role:string;
     upliftManager:boolean = false;
+    id:number;
 }

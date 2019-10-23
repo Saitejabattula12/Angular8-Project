@@ -10,7 +10,9 @@ const routes: Routes = [
   {path:'',component:LoginComponent,pathMatch:'full'},
   { path: 'landing', component: LandingComponent },
   { path: 'user', component: UserComponent },
-  { path: 'org', component: OrganisationComponent }
+  { path: 'user/:fname', component: UserComponent },
+  { path: 'org', component: OrganisationComponent },
+  { path: 'org/:id', component: OrganisationComponent }
 ];
 
 @NgModule({
